@@ -1,0 +1,32 @@
+Notes - 
+https://github.com/devopsschool-training-notes/devops-decurtis-jan-2023
+
+How to get slides?
+https://devopsschool.com/slides/
+
+How to get tutorials
+https://www.devopsschool.com/blog/
+
+How to get session recordings
+----------------------------
+https://www.devopsschool.com/lms/
+		- Give me your gmail id
+		- Login LMS using same gmail id
+
+How to submit Assignment?
+--------------------------------
+BestDevOps.com
+
+How to submit Error?
+---------------------------------
+www.debug.school
+
+How to setup local env?
+-------------------------------------
+Step 1 - Install VirtualBox
+
+Step 2 - Download Linux image
+http://isoredirect.centos.org/centos/7/isos/x86_64/
+
+Step 3 - Setup VM using VirtualBox
+https://www.devopsschool.com/blog/how-to-create-linux-virtual-machine-using-virtualbox/
