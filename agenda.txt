@@ -1,0 +1,15 @@
+Number of Tools as part of the training.
+Each tool would be covered - 6 hours.
+- Linux
+- Bash Script
+- GCP & GCP Networking (VPC & Subdomains)
+- Git/Github
+- Docker
+- Kubernetes
+- Jenkins
+- Splunk (more of using Splunk compared to installing Splunk)
+- ELK Stack (Kibana Dashboards and searching)
+- AppDynamics
+- Instana/Dynatrace
+- SonarQube
+=====================================
