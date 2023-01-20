@@ -1,0 +1,102 @@
+Step 1 - Insall Git
+
+			Windows - https://git-scm.com/
+					exe
+						gitbash
+			Linux 
+					- sudo apt-get install git -y
+					- sudo yum install git -y
+			Mac -  
+						dmg
+
+Step 2 - Go to workspace
+
+Step 3 - Create git repo
+
+Step 4 - Start writing Code.
+
+Step 5 - Add these files to git
+
+$ git add filename
+
+-------------------ONE TIME-------------------------
+$ git config user.name "Rajesh Kumar"
+$ git config user.email "devops@rajeshkumar.xyz"
+$ git config --list
+---------------------------------------------------
+
+Step 6 - Commit ADDed file to git
+
+$ git commit -m"My First commit"
+
+Step 7 - Verify a commit
+
+$ git log
+$ git show COMMITID
+
+$ git log
+commit 11f856f97ee3ac432c08a2eaf42fcd9e53ba39c4 (HEAD -> master)
+Author: Rajesh Kumar <devops@rajeshkumar.xyz>
+Date:   Fri Jan 20 08:38:50 2023 +0530
+
+    My First commit
+
+
+11f856f97ee3ac432c08a2eaf42fcd9e53ba39c4 == Commit ID == Checksum by SHA1
+
+---------------------
+git inernal - Google it
+---------------------
+==================================================================
+How to Add all files?
+How to commit selective files
+How to commit a dir
+
+
+
+501  cd git/repo1
+  502  git init
+  503  touch code1.java
+  504  start .
+  505  clear
+  506  git add code1.java
+  507  git config user.name "Rajesh Kumar"
+  508  git config user.email "devops@rajeshkumar.xyz"
+  509  git config --list
+  510  clear
+  511  git commit -m"My First commit"
+  512  clear
+  513  git log
+  514  git show 11f856f97ee3ac432c08a2eaf42fcd9e53ba39c4
+  515  clear
+  516  git status
+  517  ls
+  518  git add code2.java
+  519  git status
+  520  vi code1.java
+  521  git status
+  522  git add code1.java
+  523  git status
+  524  git commit -m"adding some changes"
+  525  git status
+  526  ls
+  527  clear
+  528  ls
+  529  touch code4.java code5.java
+  530  git status
+  531  git add --all
+  532  git status
+  533  git commit -m"only code4" code4.java
+  534  git status
+  535  mkdir src
+  536  git status
+  537  touch src/readme.md
+  538  git status
+  539  git add .
+  540  git status
+  541  git commit -m"all"
+  542  git status
+  543  history
+
+
+
