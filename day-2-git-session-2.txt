@@ -1,0 +1,26 @@
+ 501  git log --oneline
+  502  git push https://github.com/devopsschool-demo-temporary/dec-1-2023.git master
+  503  git push https://github.com/devopsschool-demo-temporary/dec-1-2023.git master
+  504  cd ..
+  505  git clone
+  506  git clone https://github.com/devopsschool-demo-temporary/dec-1-2023.git
+  507  ls
+  508  cd dec-1-2023/
+  509  clear
+  510  ls
+  511  git log --oneline
+  512  vi imramukaka.txt
+  513  git config user.name "Ramukaka"
+  514  git config user.email "ramukaka@gmail.com"
+  515  git commit -m"ramukaka"
+  516  git add --all
+  517  git commit -m"ramukaka"
+  518  git push origin master
+  519  cd ..
+  520  ls
+  521  cd repo1
+  522  ls
+  523  git remote add origin https://github.com/devopsschool-demo-temporary/dec-1-2023.git
+  524  git remote rm origin
+  525  git remote add origin https://github.com/devopsschool-demo-temporary/dec-1-2023.git
+  526  git pull origin master
