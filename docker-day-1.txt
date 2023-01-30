@@ -1,0 +1,58 @@
+    1  sudo apt-get update
+    2  sudo apt-get install ca-certificates curl gnupg lsb-release
+    3  sudo mkdir -p /etc/apt/keyrings
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    5  clear
+    6  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    7  sudo apt-get update
+    8  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+    9  docker
+   10  clear
+   11  which docker
+   12  docker version
+   13  clear
+   14  docker info
+   15  clear
+   16  docker pull httpd
+   17  docker images
+   18  docker create httpd
+   19  docker ps -a
+   20  clear
+   21  docker ps -a
+   22  docker create httpd
+   23  docker ps -a
+   24  docker start a3d881de13f8
+   25  docker ps -a
+   26  docker start a5102515759f
+   27  docker ps -a
+   28  docker stop a5102515759f
+   29  docker ps -a
+   30  docker restart a3d881de13f8
+   31  docker ps -a
+   32  docker pause a3d881de13f8
+   33  docker ps -a
+   34  docker unpause a3d881de13f8
+   35  docker ps -a
+   36  docker kill a3d881de13f8
+   37  docker ps -a
+   38  docker rm a3d881de13f8
+   39  docker ps -a
+   40  clear
+   41  docker create httpd
+   42  docker ps -a
+   43  cleaer
+   44  clear
+   45  docker ps -a
+   46  docker start ab9623fdbb1f
+   47  clear
+   48  docker ps -a
+   49  docker inspect ab9623fdbb1f
+   50  curl http://172.17.0.2
+   51  docker ps -a
+   52  docker exec -it ab9623fdbb1f /bin/bash
+   53  ls /usr/local/apache2
+   54  docker exec -it ab9623fdbb1f /bin/bash
+   55  clear
+   56  docker ps -a
+   57  history
