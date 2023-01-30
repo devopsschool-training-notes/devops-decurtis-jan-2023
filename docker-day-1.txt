@@ -1,4 +1,76 @@
-    1  sudo apt-get update
+What is Docker?
+-------------------
+			Container mgmt tool
+
+
+tool
+		Saving Cost
+				Less Cpu - less Ram - No OS
+				10 - 5 App...	10 - 10 App
+		Saving time
+				5 mins --> 1 sec
+		Quality work
+------------------------
+
+What is Container?
+-----------------------------------
+lightweight app runtime env
+
+				1 net + 1 user + 1 mnt + 1 pidtrre
+					by docker
+					powered by kernal
+
+How Apps can be run?	
+
+hardware
+		OS (kernel)
+					Namespace
+						PID		1 PIDTREE	
+						USER
+						NET
+						MNT		ROOTFS+APPFS
+					Cgroups
+							Cpu + ram
+					Capability
+							perm to the users
+
+FILESYSTEM
+-------------------------------
+BOOTFS + Rootfs + userfs + appsfs
+
+=======================================================
+
+How to install docker?
+
+
+
+mgmt
+create + start + stop + restart + pau + unpa + kill + rm
+
+IP - 54.163.12.8
+User - ubuntu
+Pass - rajesh123
+
+
+$ ssh ubuntu@54.163.12.8
+
+Docker Image 
+
+
+docker create --name raj httpd
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  1  sudo apt-get update
     2  sudo apt-get install ca-certificates curl gnupg lsb-release
     3  sudo mkdir -p /etc/apt/keyrings
     4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
