@@ -1,0 +1,31 @@
+ 784  docker run -itd --name rajesh ubuntu
+  785  docker ps
+  786  docker exec -it c60e9072a1b0 /bin/bash
+  787  docker ps
+  788  docker exec c60e9072a1b0 rajesh
+  789  docker exec c60e9072a1b0 git
+  790  clear
+  791  ls
+  792  docker ps
+  793  docker exec c60e9072a1b0 which apache2
+  794  docker commit -m"ub-up-git-apa" -a"Rajesh kumar" c60e9072a1b0 ub-up-git-apa
+  795  docker images
+  796  docker run -itd ub-up-git-apa
+  797  docker ps
+  798  docker exec d823ff6a026b git
+  799  docker exec d823ff6a026b which apache2
+
+
+INSIDE A CONTAINER
+ 1  apt-get install git
+    2  apt-get update
+    3  clear
+    4  git
+    5  apt-get install git
+    6  git
+    7  clear
+    8  apt-get install apache2
+    9  clear
+   10  which git
+   11  which apache2
+   12  exit
