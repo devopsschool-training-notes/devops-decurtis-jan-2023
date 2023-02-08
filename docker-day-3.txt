@@ -1,4 +1,30 @@
- 784  docker run -itd --name rajesh ubuntu
+How to create an Image? How to share it?
+=========================================
+Docker volume?
+====================================
+
+What is an Image?
+----------------------------
+
+ROOTFS + USERFS + APPFS +  APPFS +  APPFS
+ubuntu	   root	apache
+centos	   apache	java		tomcat		xyz
+ubtunu		root
+centos		rajesh
+
+
+	collection of filesystem(S)
+======================================
+How to create an Image?
+		Using Existing Container
+		Using Dockerfile
+
+Ubuntu + git +  + apache2 + java
+
+
+
+
+  784  docker run -itd --name rajesh ubuntu
   785  docker ps
   786  docker exec -it c60e9072a1b0 /bin/bash
   787  docker ps
@@ -29,3 +55,197 @@ INSIDE A CONTAINER
    10  which git
    11  which apache2
    12  exit
+
+How to share an image?
+------------------------------
+  887  docker images
+  888  docker rmi ub-up-git-ap-db
+  889  clear
+  890  ls
+  891  docker images
+  892  ls
+  893  docker load -i ub-up-git-ap-db.tar
+  894  docker images
+  895  clear
+  896  ls
+  897  docker images
+  898  docker info
+  899  clear
+  900  docker login
+  901  clear
+  902  docker image
+  903  cler
+  904  docker images
+  905  clear
+  906  docker images
+  907  docker tag ub-up-git-ap-db devopsschools/wed22023
+  908  docker images
+  909  clear
+  910  docker images
+  911  docker push devopsschools/wed22023
+
+
+Using Dockerfile
+=======================================================
+FROM ubuntu			
+MAINTAINER Rajesh Kumar DevOps@rajeshkumar.xyz
+RUN apt-get update
+RUN apt-get install git -y
+RUN apt-get install apache2 -y
+
+FROM ubuntu			
+MAINTAINER Rajesh Kumar DevOps@rajeshkumar.xyz
+RUN apt-get update && apt-get install git -y && apt-get install apache2 -y
+
+
+ubuntu + java7 + tomcat8 + app9
+		  -----------------------
+					1 layer
+
+ubuntu + java7 + tomcat8 + app9
+
+ubuntu + java8 + tomcat8 + app10
+		  -----------------------
+					1 layer
+
+FROM ubuntu			
+MAINTAINER Rajesh Kumar DevOps@rajeshkumar.xyz
+RUN apt-get update && apt-get install git -y
+
+FROM ubuntu			
+MAINTAINER Rajesh Kumar DevOps@rajeshkumar.xyz
+RUN touch /opt/rajesh1.txt
+RUN touch /opt/rajesh2.txt
+RUN touch /opt/rajesh3.txt
+
+FROM ubuntu			
+MAINTAINER Rajesh Kumar DevOps@rajeshkumar.xyz
+ARG user=ramukakas
+RUN apt-get update && apt-get install git -y
+ENV JAVA_HOME=/opt/JAVA
+RUN useradd $user
+USER $user
+COPY index.html /opt
+---------------------------
+How to set PID1?
+
+CMD
+ENTRYPOINT
+
+
+CMD - Can be replaced
+ENTRYPOINT - - Can be replaced
+------------------------------------------
+Volume
+----------------
+
+  887  docker images
+  888  docker rmi ub-up-git-ap-db
+  889  clear
+  890  ls
+  891  docker images
+  892  ls
+  893  docker load -i ub-up-git-ap-db.tar
+  894  docker images
+  895  clear
+  896  ls
+  897  docker images
+  898  docker info
+  899  clear
+  900  docker login
+  901  clear
+  902  docker image
+  903  cler
+  904  docker images
+  905  clear
+  906  docker images
+  907  docker tag ub-up-git-ap-db devopsschools/wed22023
+  908  docker images
+  909  clear
+  910  docker images
+  911  docker push devopsschools/wed22023
+  912  history
+  913  clear
+  914  ls
+  915  vi dockerfile
+  916  docker build -t rajesh .
+  917  clear
+  918  ls
+  919  docker images
+  920  docker ps
+  921  clear
+  922  ls
+  923  vi dockerfile1
+  924  docker build -f dockerfile1 -t rajesh1 .
+  925  clear
+  926  docker history rajesh1
+  927  docker ps
+  928  docker exec eb97b83510da id
+  929  docker exec -it eb97b83510da /bin/bash
+  930  ls
+  931  touch index.html
+  932  ls
+  933  clear
+  934  ls
+  935  vi dockerfile2
+  936  docker build -t rajesh2 -f dockerfile2 .
+  937  docker images
+  938  docker run -itd --name rajesh2 rajesh2
+  939  docker ps
+  940  clear
+  941  docker ps
+  942  docker exec eb67625d6982 git
+  943  clear
+  944  docker exec eb67625d6982 env
+  945  docker exec eb67625d6982 id
+  946  docker exec eb67625d6982 ls /opt/
+  947  docker ps
+  948  docker run -d httpd
+  949  docker ps
+  950  clear
+  951  docker ps
+  952  docker run -itd ubuntu ls
+  953  docker run -it ubuntu ls
+  954  docker ps -a
+  955  clear
+  956  docker run -d jenkins/jenkins ls
+  957  docker ps -a
+  958  clear
+  959  docker volume ls
+  960  ls /var/lib/docker/volumes/
+  961  docker volume create raj
+  962  ls /var/lib/docker/volumes/
+  963  docker run  ubuntu
+  964  docker ps -a
+  965  docker run-it ubuntu
+  966  docker run -it ubuntu
+  967  docker ps
+  968  clear
+  969  docker ps
+  970  docker run -itd -v raj:/opt/ramukaka ubuntu
+  971  docker ps
+  972  docker exec 79da48078fe7 df -kh
+  973  clear
+  974  docker exec 79da48078fe7 touch /opt/ramukaka/rajubangayagen.txt
+  975  docker exec 79da48078fe7 ls /opt/ramukaka
+  976  ls /var/lib/docker/volumes/raj/_data/
+  977  docker ps
+  978  docker rm 79da48078fe7
+  979  docker stop 79da48078fe7
+  980  docker rm 79da48078fe7
+  981  ls /var/lib/docker/volumes/raj/_data/
+  982  docker run -itd -v raj:/opt/ramukaka ubuntu
+  983  docker ps
+  984  docker exec 2a0419a8b1d4 ls /opt/ramukaka
+  985  history
+
+
+
+
+
+
+
+
+
+
+
