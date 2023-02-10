@@ -1,0 +1,62 @@
+Requirement		Code		Review
+-----------	-------------  --------
+	Jira	 Git/Github	
+
+
+What is SonarQube?
+===============================
+Quality mgmt Tool
+writ in JAVA
+Release
+		Community
+		Dev
+		Ente
+https://www.sonarsource.com/products/sonarqube/downloads/
+From SonarSource
+
+
+Tool
+	TIME
+	COST
+	QUALITY
+
+Quality
+		Code Quality
+					Peer Code Review - Manual
+					Static Code Analysis tool
+					https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+		Test Quality
+					Test case results
+
+=====================================
+Static Code Analysis
+		Code Review a Code
+		Rule Review a Code
+		1 Rule Review a 1 Spec in Code
+		100 Rule Review a 100 Spec in Code
+		tool Review a 100 Spec in Code
+
+Tools
+https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
+
+Architecture
+-==--------------------
+Server		- DONE
+http://20.163.145.158:9000/
+admin
+admin1234
+
+
+Laptop
+-----------------------------
+Java 11 must be installed
+https://www.devopsschool.com/blog/complete-guide-of-java-installation-in-linux/
+
+Scanner
+https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner/
+
+Code
+git clone https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+
+C:\tools\sonarqube\sonar-scanner-windows\bin\sonar-scanner.bat
+
