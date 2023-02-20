@@ -1,0 +1,81 @@
+What is jenkins?
+-----------------------
+		CI tool
+		Dev in Java
+		Release
+			jenkins - FREE - OS
+			jenkins enterprise
+			jenkinx
+			blueocean
+
+
+What is CI?
+
+Auto Build + Auto Testing
+=========================
+		Imm Feedback
+
+					Dev										QA
+----------------------------------------------------------- --------------------------------
+PLAN -> Code -> Analyze -> Build -> UT -> Packge -> Archive -> Dep2qa -> AT -> CodeCverage
+==========================================================================================
+Jira   git     Sonarqube   maven   jnut  packer     artifactory ansible  selenium jacoco
+
+==========================================================================================
+									Jenkins		
+
+Integ
+			All tools
+			All phases 
+			All teams
+
+All is Passed - release
+One failed - repeat
+
+										Jenkins
+												- integ everything
+												- schedule			
+												- feedback
+
+
+=======================================================================
+How jenkins works? Architecture
+
+
+
+
+HUMAN ---> Jenkins (Web:8080) --> Node
+
+How to install it?
+=====================
+http://20.228.241.193:8080/
+rajesh
+rajesh123
+
+What is the code technology? - c c++ java
+Where is your source - github? 
+https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
+Where is your Builder - maven
+					Goal -----------------------
+					Compile - compile
+					Test	- test
+					package - package
+
+How often u want this build to happen?
+Whom you want to send a email - devops@rajeshkumar.xyz
+=============================================
+Steps - https://www.devopsschool.com/blog/configure-jenkins-first-job-of-java-code-base-with-maven-build-tool/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
